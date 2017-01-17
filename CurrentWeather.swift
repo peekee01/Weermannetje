@@ -77,7 +77,7 @@ class CurrentWeather {
                 }
                 
             }
+                    completed()
         }
-        completed()
     }
 }
