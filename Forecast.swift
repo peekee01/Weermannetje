@@ -49,7 +49,6 @@ class Forecast {
             if let min = temp["min"] as? Double {
                 let kelvinToCelsius = Double(round(min - 273.15))
                 self._lowTemp = "\(kelvinToCelsius) ℃"
-                print(_lowTemp)
             }
             if let max = temp["max"] as? Double {
                 let kelvinToCelsius = Double(round(max - 273.15))
@@ -69,7 +68,7 @@ class Forecast {
             dateFormatter.dateStyle = .full
             dateFormatter.dateFormat = "EEEE"
             dateFormatter.timeStyle = .none
-            self._date = unixConvertedDate.dayOfTheWeek()
+            self._date = unixConvertedDate.dayOfTheWeek()	
         }
     }
 }
